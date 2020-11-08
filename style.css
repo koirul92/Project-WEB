@@ -38,3 +38,48 @@ img{
     text-transform: uppercase;
     font-weight: bold;
 }
+#section1{
+    background: #04677E;
+    background-size: cover;
+    display: inline-block;
+    width: 100%;
+    color: #04677E;
+}
+#section2{
+    background:#04677E;
+    display: inline-block;
+    width: 100%;
+    color: black;
+}
+#section3{
+    background:#04677E;
+    display: inline-block;
+    width: 100%;
+    color: black;
+}
+#section4{
+    background: #04677E;
+    display: inline-block;
+    width: 100%;
+    color: black;
+}
+#section5{
+    background: url('img/bg_contact.png');
+    background-color: #04677E ;
+    background-size: cover;
+    display: inline-block;
+    width: 100%;
+    color: black;
+}
+#section6{
+    background:#04677E ;
+    background-size: cover;
+    display: inline-block;
+    width: 100%;
+    color: black;
+}
+#section7{
+    display: inline-block;
+    width: 100%;
+    color: black;
+}
