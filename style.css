@@ -83,3 +83,72 @@ img{
     width: 100%;
     color: black;
 }
+h1{
+    margin: 100px;
+    text-align: center;
+    padding: 0;
+}
+.bg1{
+    position: static;
+    z-index: 1;
+    top: 0px;
+}
+.search{
+    z-index: 2;
+    margin-top: 150px;
+    margin-right: 5px;
+    width: 300px;
+    height: 30px;
+    float: right;
+    border: 1px;
+    border-radius: 10px;
+}
+.submit{
+    z-index: 3;
+    margin-top: 150px;
+    margin-right: 20px;
+    width: 70px;
+    height: 30px;
+    float: right;
+    border: 1px;
+    border-radius: 10px;
+}
+.listw{
+    margin-left: 150px;
+}
+.contact-form{
+	box-sizing: border-box;
+	margin-left: 100px;
+	width: 600px;
+}
+.textcoollor{
+  	border:10px solid blue;
+  	margin: 0px 0;
+  	padding: 0px 0px;
+  	border-radius: 50px;
+}
+.textcollor label{
+  	display: block;
+  	text-align: left;
+  	color: #fafafa;
+  	text-transform: uppercase;
+  	font-size: 20px;
+  	font-family: fantasy;
+  	font-style: unset;
+}
+.textcollor input{
+	margin: 0%;
+	height: 25px;
+	font-family: sans-serif;
+	font-size: 16px; 
+	border: 1px;
+	border-radius: 3px;
+}
+.textcollor textarea{
+    margin: 0%;
+    height: 100px;
+	font-family: sans-serif;
+	font-size: 16px; 
+	border: 1px;
+	border-radius: 3px;
+}
