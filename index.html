@@ -1,51 +1,63 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Visiting Lamongan</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><img src="img/Logo.png" width="157" height="88"></li>
-            <li><a class="menu" href="#section1">Home</a></li>
-            <li><a class="menu" href="#section2">Destinasi</a></li>
-            <li><a class="menu" href="#section3">Penginapan</a></li>
-            <li><a class="menu" href="#section4">Peta Wisata</a></li>
-            <li><a class="menu" href="#section5">Contact Us</a></li>
-            <li><a class="menu" href="#section6">Pojok Covid</a></li>
-            <li><a class="menu" href="#section7">About Us</a></li>
+    <nav id="navbar">
+        <div class="navbarcon">
+            <div class="logo"><a href=""><img class="logo" src="img/Logo.png" ></a></div>
+        <ul class="menu">
+            <li><a href="#section1">Home</a></li>
+            <li><a href="#section2">Destinasi</a></li>
+            <li><a href="#section3">Penginapan</a></li>
+            <li><a href="#section4">Peta Wisata</a></li>
+            <li><a href="#section5">Contact Us</a></li>
+            <li><a href="#section6">Pojok Covid</a></li>
+            <li><a href="#section7">About Us</a></li>
+                <li><input type="text" placeholder="Search.." name="search"></li>
+                <li><button type="submit"><img src="img/Search.png" width="100%"></button></li>
+        </div>
         </ul>
+        </div>
     </nav>
 <div id="section1">
-    <input class="submit" type="submit" value="Search">
-    <input class="search" type="text" placeholder="Search..">
-    <img class="bg1" src="img/home.png" alt="Peta Wisata" width="100%" height="100%">
+    <h1></h1>
+    <div class="boxcontain">
+        <div class="boxkiri">
+        <img src="img/Tourism.png" width="70%">
+        </div>
+        <div class="boxkanan">
+            <img src="img/logo.png" width="70%">
+    <p style="text-decoration: underline;">"Enjoy your trip with your family and friends"
+    </p>
+        </div>
 </div>
 <div id="section2">
-    <h1><img src="img/Heading_Dest.png" width="565" height="182"></h1>
+    <h1><img src="img/Heading_Dest.png" width="60%"></h1>
     <div class="listw">
     <a href="wisata.html">
-	<img src="img/Wisata1.png" width="279" height="481">
+	<img src="img/Wisata1.png">
     </a>
     <a href="wisata.html">
-        <img src="img/Wisata2.png" width="279" height="481">
+        <img src="img/Wisata2.png">
     </a>
     <a href="wisata.html">
-        <img src="img/Wisata3.png" width="279" height="481">
+        <img src="img/Wisata3.png">
     </a>
     </div>
 </div>
 <div id="section3">
-    <h1><img src="img/Heading_Penginapan.png" width="533" height="75"></h1>
+    <h1><img src="img/Heading_Penginapan.png" width="70%"></h1>
     <div class="listp">
     <a href="penginapan.html">
-        <img src="img/penginapan1.png" width="400" height="410">
+        <img src="img/penginapan1.png">
     </a>
     <a href="penginapan.html">
-        <img src="img/penginapan2.png" width="400" height="410">
+        <img src="img/penginapan2.png">
     </a>
     </div>
 </div>
@@ -53,49 +65,59 @@
     <img src="img/Peta Wisata.png" alt="Peta Wisata" width="100%" height="100%">
 </div>
 <div id="section5">
-    <h1><img src="img/Heading_Contact.png" width="573" height="89"></h1>
+    <h1><img src="img/Heading_Contact.png" width="70%"></h1>
 <div class="contact-form">
 		<form>
-		<table>
 		<div class="textcollor">
 			<label for="username">Nama Lengkap :</label> <br>
-			<input type="text" id="username" value="" placeholder="   Masukkan Nama Lengkap Anda" style="width:400px;">
+			<input type="text" id="username" value="" placeholder="   Masukkan Nama Lengkap Anda" >
 		</div>	
 		<br>
 		<div class="textcollor">
 			<label for="Email">Email :</label> <br>
-			<input type="text" id="Email" value="" placeholder="   Masukkan Email Anda" style="width:400px;">
+			<input type="text" id="Email" value="" placeholder="   Masukkan Email Anda" >
 		</div>
 		<br>
 		<div class="textcollor">		
 			<label for="No. HP">No. HP :</label> <br>
-			<input type="text" name="" id="output" placeholder="   Masukkan Nomor HP Anda" cols="30" rows="10" style="width: 400px">
+			<input type="text" name="" id="output" placeholder="   Masukkan Nomor HP Anda" >
 		</div>
 		<br>
 		<div class="textcollor">		
 			<label for="Pesan">Pesan :</label> <br>
-			<textarea name="Pesan" id="Pesan" placeholder="   Masukkan Pesan Anda" cols="30" rows="10" style="width: 400px"></textarea>
+			<textarea name="Pesan" id="Pesan" placeholder="   Masukkan Pesan Anda" cols="30" rows="10"></textarea>
 		</div>
 		<br>
 		<div class="textcollor">
 			<input type="submit" style="width: 200px; height: 30px; font-size: 14px; font-family: sans-serif;border: 1px; border-radius: 5px; color: white; cursor: pointer; background: #e33d56;"></input>
-		</div>
-		</table>	
+        <br>
+        </div>	
 		</form>
 	</div>
     	</div>
 	<div id="section6">
-    <h1><img src="img/Heading_Covid.png" width="565" height="75"></h1>
+    <h1><img src="img/Heading_Covid.png" width="70%"></h1>
     <div class="listb">
     <a href="berita.html">
-        <img src="img/berita1.png" width="433" height="345">
+        <img src="img/berita1.png">
     </a>
     <a href="berita.html">
-        <img src="img/berita2.png" width="433" height="345">
+        <img src="img/berita2.png">
     </a>
     </div>
     <div id="section7">
-    <img src="img/about.png" alt="about us" width="100%" height="100%">
+    <h1><img src="img/Heading_About.png" width="70%"></h1>
+    <p>Visiting Lamongan merupakan sebuah situs yang berdiri sejak Oktober 2020.
+        Situs ini merupakan sebuah portal informasi untuk para wisatawan yang ingin
+        berkunjung ke Kota Lamongan. Selain itu, situs ini juga bertujuan
+        mengenalkan lamongan kepada wisatawan lokal maupun mancanegara khususnya di sektor
+        pariwisatanya, dan memudahkan siapapun yang ingin berkunjung ke Lamongan.
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     </div>
 </body>
