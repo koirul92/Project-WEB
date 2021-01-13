@@ -239,11 +239,21 @@ h1{
         padding-left: 10%;
     }
 }
+@media screen and (max-width: 800px){
+    .menu a:not(:first-child) {display: none;}
+    .menu a.icon {
+      float: right;
+      display: block;
+    }
+}
 @media (max-width: 600px){
     .boxkanan,.boxkiri,.boxcontain{
         width: 80%;
         padding-left: 10%;
     }
+    
+    iframe{
+        margin-left: 3px;
 }
 @media screen and (max-width: 600px) {
     .menu a:not(:first-child) {display: none;}
