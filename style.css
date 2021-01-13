@@ -24,28 +24,31 @@ nav{
     max-height: 80px ;
     margin-left: 3%;
     margin-right: 2%;
-    float: left;
-}
-ul{
-    float: right;
-    padding: 0;
-    margin-right: 1%;
-    list-style: none;
-}
-li{
-    float: left;
 }
 .menu a{
-    padding-top: 10px;
-    padding-right: 15px;
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
+    float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.menu a:hover {
+  background-color: none;
+  color: black;
+}
+
+.menu a.active {
+  background-color: none;
+  color: white;
+}
+
+.menu .icon {
+  display: none;
 }
 .menu input{
-  margin-top: 8px;
+  margin-top: 10px;
   font-size: 17px;
   border: 1px solid grey;
   border-radius: 5px;
@@ -56,7 +59,7 @@ li{
 .menu button{
     width: 24px;
     height: 24px;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 #section1{
@@ -131,10 +134,13 @@ li{
     margin-bottom: 1%;
 }
 #section4{
-    background: #04677E;
+    background: #00728B;
     display: inline-block;
     width: 100%;
     color: black;
+}
+iframe{
+    margin-left: 28%;
 }
 #section5{
     background: url('img/bg_contact.png');
@@ -239,12 +245,27 @@ h1{
         padding-left: 10%;
     }
 }
-@media (max-width: 400px){
-    .boxkanan,.boxkiri,.boxcontain{
-        width: 85%;
-        padding-left: 10%;
+@media screen and (max-width: 600px) {
+    .menu a:not(:first-child) {display: none;}
+    .menu a.icon {
+      float: right;
+      display: block;
     }
-}
+  }
+  
+  @media screen and (max-width: 600px) {
+    .menu.responsive {position: relative;}
+    .menu.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .menu.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
 /* landing wisata dan penginapan */
 #landwis{
     background:#04677E ;
