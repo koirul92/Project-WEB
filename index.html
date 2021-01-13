@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Visiting Lamongan</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav id="navbar">
-        <div class="navbarcon">
+        <div class="navbarcon"></div>
+        <div class="menu" id="myMenu">
             <div class="logo"><a href=""><img class="logo" src="img/Logo.png" ></a></div>
-        <ul class="menu">
-            <li><a href="#section1">Home</a></li>
-            <li><a href="#section2">Destinasi</a></li>
-            <li><a href="#section3">Penginapan</a></li>
-            <li><a href="#section4">Peta Wisata</a></li>
-            <li><a href="#section5">Contact Us</a></li>
-            <li><a href="#section6">Pojok Covid</a></li>
-            <li><a href="#section7">About Us</a></li>
-                <li><input type="text" placeholder="Search.." name="search"></li>
-                <li><button type="submit"><img src="img/Search.png" width="100%"></button></li>
+            <a href="#section1" class="active">Home</a>
+            <a href="#section2">Destinasi</a>
+            <a href="#section3">Penginapan</a>
+            <a href="#section4">Peta Wisata</a>
+            <a href="#section5">Contact Us</a>
+            <a href="#section6">Pojok Covid</a>
+            <a href="#section7">About Us</a>
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><img src="img/Search.png" width="100%"></button>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
         </div>
-        </ul>
         </div>
     </nav>
 <div id="section1">
@@ -62,7 +64,12 @@
     </div>
 </div>
 <div id="section4">
-    <img src="img/Peta Wisata.png" alt="Peta Wisata" width="100%" height="100%">
+    <h1><img src="img/Heading_Peta.png" width="70%"></h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.209308102897!2d112.3577494143166!3d-6.86550286907862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77c26babdce9c5%3A0xff08e6018081d10!2sWisata%20Bahari%20Lamongan!5e0!3m2!1sid!2sid!4v1610520553107!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" ></iframe>
+    <p></p>
+    <br>
+    <br>
+    <br>
 </div>
 <div id="section5">
     <h1><img src="img/Heading_Contact.png" width="70%"></h1>
@@ -116,5 +123,16 @@
     <br>
     <br>
     </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myMenu");
+          if (x.className === "menu") {
+            x.className += " responsive";
+          } else {
+            x.className = "menu";
+          }
+        }
+
+        </script>
 </body>
 </html>
